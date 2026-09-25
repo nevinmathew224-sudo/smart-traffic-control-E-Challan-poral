@@ -1,8 +1,16 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "traffic_system");
+// Database Configuration
+// For Local XAMPP: Leave as default (localhost / root / '' / traffic_system)
+// For InfinityFree: Replace with values from InfinityFree Control Panel -> MySQL Databases
+$db_host = getenv('DB_HOST') ?: 'localhost';
+$db_user = getenv('DB_USER') ?: 'root';
+$db_pass = getenv('DB_PASS') !== false ? getenv('DB_PASS') : '';
+$db_name = getenv('DB_NAME') ?: 'traffic_system';
+
+$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("<h3>Database Connection Failed</h3><p>" . htmlspecialchars($conn->connect_error) . "</p><p><small>Tip: If deploying to InfinityFree or cPanel, please check <code>db.php</code> and enter your host's MySQL Hostname, Username, Password, and Database Name.</small></p>");
 }
 
 $conn->set_charset("utf8mb4");
