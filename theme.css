@@ -1,0 +1,390 @@
+/* ==========================================================================
+   SMART TRAFFIC CONTROL & AUTOMATED E-CHALLAN SYSTEM
+   Vibrant Modern Design System • Digital India Final-Year Capstone Project
+   Color Palette: Electric Blue, Purple / Violet, Cyan, Light Clean Backgrounds
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /* 1. Futuristic Smart Traffic Control Center Palette */
+    --command-navy: #060d19;
+    --command-navy-deep: #030712;
+    --command-navy-card: rgba(13, 24, 46, 0.82);
+    --command-navy-glass: rgba(15, 23, 42, 0.72);
+    --command-navy-surface: #0c182b;
+    
+    --royal-blue: #1d4ed8;
+    --royal-blue-hover: #1e40af;
+    --electric-blue: #2563eb;
+    --electric-blue-hover: #1d4ed8;
+    --electric-blue-light: #dbeafe;
+    --electric-blue-glow: rgba(37, 99, 235, 0.38);
+
+    --purple-violet: #2563eb;
+    --purple-violet-hover: #1d4ed8;
+    --purple-violet-light: #eff6ff;
+    --purple-violet-glow: rgba(37, 99, 235, 0.25);
+
+    --cyan-accent: #0f766e;
+    --cyan-glow: #0d9488;
+    --cyan-light: #f0fdfa;
+    --cyan-laser: rgba(15, 118, 110, 0.35);
+    
+    /* 2. Glassmorphism & Cyber Borders */
+    --border-glass-cyan: rgba(15, 118, 110, 0.25);
+    --border-glass-purple: rgba(37, 99, 235, 0.25);
+    --border-glass-subtle: rgba(148, 163, 184, 0.18);
+    --border-cyber-active: #2563eb;
+    
+    /* 3. Typography & Ink */
+    --text-pure-white: #ffffff;
+    --text-heading: #0f172a;
+    --text-heading-dark: #f8fafc;
+    --text-body: #334155;
+    --text-body-dark: #cbd5e1;
+    --text-muted: #64748b;
+    --text-muted-dark: #94a3b8;
+    --text-silver: #e2e8f0;
+    
+    /* 4. Strictly Traffic Status Indicators Only */
+    --traffic-green: #15803d;
+    --traffic-green-bg: #f0fdf4;
+    --traffic-green-border: #bbf7d0;
+    --traffic-green-glow: rgba(21, 128, 61, 0.35);
+    
+    --traffic-amber: #b45309;
+    --traffic-amber-bg: #fffbeb;
+    --traffic-amber-border: #fde68a;
+    --traffic-amber-glow: rgba(180, 83, 9, 0.35);
+    
+    --traffic-red: #dc2626;
+    --traffic-red-bg: #fef2f2;
+    --traffic-red-border: #fecaca;
+    --traffic-red-glow: rgba(220, 38, 38, 0.35);
+    
+    /* 5. Dynamic Cyber Gradients */
+    --grad-primary: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    --grad-primary-hover: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    --grad-cyber-cyan: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
+    --grad-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f766e 100%);
+    --grad-command-sidebar: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+    --grad-card-accent: linear-gradient(90deg, #2563eb 0%, #0f766e 100%);
+    
+    /* 6. Shadows, Glows & Elevations */
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+    --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.12);
+    --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.16);
+    --shadow-glow-cyan: 0 0 20px rgba(15, 118, 110, 0.3);
+    --shadow-glow-purple: 0 0 20px rgba(37, 99, 235, 0.3);
+    --shadow-glow-blue: 0 0 20px rgba(37, 99, 235, 0.3);
+    
+    /* 7. Radii & Transitions */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+    --transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   GLOBAL RESET & BASE TYPOGRAPHY
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-body);
+    background-color: var(--bg-page);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-heading);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+}
+
+/* ==========================================================================
+   BUTTONS (ELECTRIC BLUE & PURPLE / VIOLET GRADIENTS)
+   ========================================================================== */
+.btn-primary, .btn-hero-primary, .btn-gateway-cta, .btn-instant-search, .btn-pay {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--grad-primary) !important;
+    color: #ffffff !important;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    text-decoration: none !important;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+    transition: var(--transition);
+}
+
+.btn-primary:hover, .btn-hero-primary:hover, .btn-gateway-cta:hover, .btn-instant-search:hover, .btn-pay:hover {
+    background: var(--grad-primary-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.btn-secondary, .btn-hero-secondary, .btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #ffffff !important;
+    color: var(--electric-blue) !important;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 11px 22px;
+    border-radius: var(--radius-md);
+    border: 1.5px solid #bfdbfe;
+    cursor: pointer;
+    text-decoration: none !important;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.btn-secondary:hover, .btn-hero-secondary:hover, .btn-light:hover {
+    background: #eff6ff !important;
+    border-color: var(--electric-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.15);
+}
+
+/* ==========================================================================
+   STANDARDIZED SINGLE BOTTOM NAVIGATION BUTTON
+   ========================================================================== */
+.portal-bottom-nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin: 36px auto 20px auto !important;
+    padding: 0 16px !important;
+    width: 100% !important;
+    clear: both !important;
+}
+
+.portal-nav-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 12px 28px !important;
+    border-radius: var(--radius-full) !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    transition: var(--transition) !important;
+}
+
+.portal-nav-btn-home {
+    background: #0f172a !important;
+    color: #ffffff !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.25) !important;
+}
+.portal-nav-btn-home:hover {
+    background: #1e293b !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35) !important;
+}
+
+.portal-nav-btn-dash {
+    background: #ffffff !important;
+    color: var(--electric-blue) !important;
+    border: 1.5px solid #bfdbfe !important;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.12) !important;
+}
+.portal-nav-btn-dash:hover {
+    background: #eff6ff !important;
+    border-color: var(--electric-blue) !important;
+    color: var(--electric-blue-hover) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22) !important;
+}
+
+/* ==========================================================================
+   CARDS & PANELS
+   ========================================================================== */
+.card, .stat-card, .table-panel, .service-card, .step-card, .gateway-card, .vehicle-card {
+    background: var(--surface-card);
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.card:hover, .stat-card:hover, .service-card:hover, .step-card:hover, .gateway-card:hover, .vehicle-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: #2563eb;
+}
+
+/* ==========================================================================
+   FUTURISTIC COMMAND CENTER GLASS PANELS & CYBER ELEMENTS
+   ========================================================================== */
+.glass-command-card {
+    background: var(--command-navy-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass-cyan);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.glass-command-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    background: var(--grad-card-accent);
+}
+
+.glass-command-card:hover {
+    border-color: rgba(56, 189, 248, 0.6);
+    box-shadow: var(--shadow-glow-cyan);
+    transform: translateY(-3px);
+}
+
+.grad-text-cyber {
+    background: linear-gradient(135deg, #ffffff 0%, #93c5fd 55%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cyber-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(6, 182, 212, 0.4);
+    color: #38bdf8;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.cyber-badge.purple {
+    background: rgba(37, 99, 235, 0.12);
+    border-color: rgba(37, 99, 235, 0.35);
+    color: #2563eb;
+}
+
+/* ==========================================================================
+   HSRP NUMBER PLATE COMPONENT
+   ========================================================================== */
+.hsrp-box {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #0f172a;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+.hsrp-ind {
+    background: #003399;
+    color: #ffffff;
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 900;
+    border-right: 1.5px solid #0f172a;
+    line-height: 1;
+}
+.hsrp-no {
+    padding: 6px 14px;
+    font-family: 'Outfit', monospace;
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #0f172a;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   STRICT TRAFFIC STATUS INDICATORS
+   ========================================================================== */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.status-paid, .tag-compliant, .tag-clear {
+    background: var(--traffic-green-bg) !important;
+    color: var(--traffic-green) !important;
+    border: 1px solid var(--traffic-green-border) !important;
+}
+
+.status-unpaid, .tag-violation, .tag-due {
+    background: var(--traffic-red-bg) !important;
+    color: var(--traffic-red) !important;
+    border: 1px solid var(--traffic-red-border) !important;
+}
+
+.status-warning, .tag-amber, .tag-risk-med {
+    background: var(--traffic-amber-bg) !important;
+    color: var(--traffic-amber) !important;
+    border: 1px solid var(--traffic-amber-border) !important;
+}
+
+/* ==========================================================================
+   SMOOTH ANIMATIONS & MICRO-INTERACTIONS
+   ========================================================================== */
+@keyframes gentleFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+}
+
+.anim-float {
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+@keyframes gentlePulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+}
+
+.pulse-dot-cyan {
+    width: 8px;
+    height: 8px;
+    background: var(--cyan-glow);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--cyan-glow);
+    animation: gentlePulse 2s infinite ease-in-out;
+}

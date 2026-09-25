@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Kerala Police Theme (Backup / Previous State)
+   Smart Traffic Control & Management System
+   ========================================================================== */
+
+:root {
+    --navy-950: #092c3a;
+    --navy-900: #0f4658;
+    --navy-800: #166074;
+    --blue-500: #008c8c;
+    --blue-400: #18b7a6;
+    --cyan: #f0b429;
+    --panel: #fffdf6;
+    --panel-soft: #f4faf7;
+    --line: #c9ddd7;
+    --ink: #17313a;
+    --muted: #61777d;
+    --success: #12805c;
+    --warning: #c47f00;
+    --danger: #b94135;
+    --shadow: 0 16px 38px rgba(9, 44, 58, 0.10);
+}
+
+body {
+    color: var(--ink) !important;
+    background:
+        radial-gradient(circle at 88% 10%, rgba(240, 180, 41, 0.16), transparent 25%),
+        radial-gradient(circle at 8% 90%, rgba(24, 183, 166, 0.14), transparent 28%),
+        linear-gradient(180deg, #fbfbf2 0%, #e7f3ef 100%) !important;
+}
+
+.hero,
+.sidebar,
+.topbar {
+    background:
+        linear-gradient(180deg, rgba(9, 44, 58, 0.98), rgba(15, 70, 88, 0.96)),
+        radial-gradient(circle at 24% 16%, rgba(240, 180, 41, 0.22), transparent 25%) !important;
+}
+
+.card,
+.panel,
+.filters,
+.table-panel,
+.form-panel,
+.metric-card,
+.stat-card,
+.setting-card,
+.insight-card,
+.chart-card,
+.receipt {
+    background: var(--panel) !important;
+    border-color: var(--line) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+input,
+select,
+textarea {
+    background: #ffffff !important;
+    border-color: var(--line) !important;
+    color: var(--ink) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid rgba(24, 183, 166, 0.24) !important;
+    border-color: var(--blue-400) !important;
+}
+
+table th {
+    background: #edf7f4 !important;
+    color: #0f4658 !important;
+}
+
+table td {
+    border-color: #dcebe7 !important;
+}
+
+.hero h1,
+.topbar h1,
+.page-title h1 {
+    color: #092c3a;
+}
+
+.hero h1,
+.topbar h1,
+.sidebar,
+.sidebar a {
+    color: #fff !important;
+}
+
+.seal-mark,
+.emblem,
+.btn,
+button,
+input[type="submit"],
+.primary-btn,
+.action-btn.primary {
+    background: linear-gradient(135deg, #008c8c, #f0b429) !important;
+    color: #fff !important;
+    border-color: transparent !important;
+}
+
+.btn-light,
+.secondary,
+.action-btn.secondary {
+    background: #fffdf6 !important;
+    color: #0f4658 !important;
+    border-color: var(--line) !important;
+}
+
+.danger-btn,
+.logout {
+    background: linear-gradient(135deg, #b94135, #8f2f28) !important;
+    color: #fff !important;
+}
+
+.badge,
+.eyebrow,
+.status-pill,
+.role-pill,
+.tag,
+.plate-tag,
+.violation-tag {
+    background: #eef9f6 !important;
+    border-color: rgba(0, 140, 140, 0.26) !important;
+    color: #0f4658 !important;
+}
+
+.plate-tag,
+.tag {
+    background: #fff3cc !important;
+    color: #092c3a !important;
+}
+
+.status-paid {
+    background: #dcf7ed !important;
+    color: #0f684b !important;
+}
+
+.status-unpaid {
+    background: #fff1d6 !important;
+    color: #9a5a00 !important;
+}
+
+.seal strong::after {
+    content: " Kerala";
+    color: #ffd86b;
+    font-weight: 700;
+}
+
+.status-note small::after {
+    content: " - KL ready";
+}
