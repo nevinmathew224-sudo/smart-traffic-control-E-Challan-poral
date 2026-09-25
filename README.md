@@ -18,7 +18,7 @@
 
 ### Smart Traffic Control & E-Challan Management Portal
 
-**Developed by [NEVIN MATHEW](https://github.com/nevinmathew224-sudo)**
+**Developed by [NEVIN MATHEW](https://github.com/nevinmathew224-sudo) & KANNAN JAYAKUMAR**
 
 An end-to-end, enterprise-grade automated traffic enforcement, dual-angle CCTV evidence inspection, and digital fine settlement system engineered for modern transportation authorities and smart cities. **Zero paper, 100% verifiable.**
 
@@ -72,7 +72,7 @@ git clone https://github.com/nevinmathew224-sudo/smart-traffic-control-E-Challan
 - [Security, Scope, and Data Integrity](#security-scope-and-data-integrity)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-- [About the Author](#about-the-author)
+- [Project Team & Authors](#project-team--authors)
 - [Common Questions](#common-questions)
   - [Can I self-host this portal locally without an active internet connection?](#can-i-self-host-this-portal-locally-without-an-active-internet-connection)
   - [How does the QR verification code on receipts prevent tampering?](#how-does-the-qr-verification-code-on-receipts-prevent-tampering)
@@ -375,11 +375,13 @@ This project is licensed under the [MIT License](LICENSE). You are free to modif
 
 ---
 
-## About the Author
+## Project Team & Authors
 
-Developed with ❤️ by **[NEVIN MATHEW](https://github.com/nevinmathew224-sudo)**  
-*Department of Computer Science & Engineering*  
-GitHub: [@nevinmathew224-sudo](https://github.com/nevinmathew224-sudo)
+Developed with ❤️ by:
+- **[NEVIN MATHEW](https://github.com/nevinmathew224-sudo)** (GitHub: [@nevinmathew224-sudo](https://github.com/nevinmathew224-sudo))
+- **KANNAN JAYAKUMAR**
+
+*Department of Computer Science & Engineering*
 
 ---
 
@@ -405,5 +407,5 @@ Run `python generate_report.py` from the project root. On Windows systems with M
 <div align="center">
   <b>Smart Traffic Control & E-Challan Portal</b> • Built for safer roads and transparent digital governance.
   <br><br>
-  <strong>Developed by <a href="https://github.com/nevinmathew224-sudo">NEVIN MATHEW</a></strong>
+  <strong>Developed by <a href="https://github.com/nevinmathew224-sudo">NEVIN MATHEW</a> & KANNAN JAYAKUMAR</strong>
 </div>
